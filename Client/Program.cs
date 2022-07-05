@@ -12,8 +12,8 @@
 
 
 //1.    creare i reader e i writer per leggere dal file
-//      C:\Users\mistre\source\repos\csharp-developer-simulator\client_activity.txt
-//      al file C:\Users\mistre\source\repos\csharp-developer-simulator\developer_activity.txt
+//      C:\\Users\\Utente\\source\\repos\\csharp-developer-simulator\\client_activity.txt
+//      al file C:\Users\mistre\source\repos\C:\\Users\\Utente\\source\\repos\\csharp-developer-simulator\\developer_activity.txt
 //      dovremmo fare una apertura in lettura di un file e in scrittura di un altro file
 
 //2. leggere la linea = attività e salvarala da qualche parte --> read su client_activity.txt
