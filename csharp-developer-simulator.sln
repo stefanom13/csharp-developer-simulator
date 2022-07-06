@@ -3,15 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.2.32616.157
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Client", "Client\Client.csproj", "{0532614B-4573-4356-9298-95DCB70EB2CF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Client", "Client\Client.csproj", "{0532614B-4573-4356-9298-95DCB70EB2CF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Developer", "Developer\Developer.csproj", "{CCB4290A-04C9-4380-A512-13F780A3D365}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Developer", "Developer\Developer.csproj", "{CCB4290A-04C9-4380-A512-13F780A3D365}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Elementi di soluzione", "Elementi di soluzione", "{F7FF9A06-5F84-4FFA-A46E-020ACF350D92}"
 	ProjectSection(SolutionItems) = preProject
 		client_activity.txt = client_activity.txt
 		developer_activity.txt = developer_activity.txt
 	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Libreria", "Libreria\Libreria.csproj", "{0ED96FE2-D941-4370-8AEE-533CC6AF5E0A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,10 @@ Global
 		{CCB4290A-04C9-4380-A512-13F780A3D365}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CCB4290A-04C9-4380-A512-13F780A3D365}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CCB4290A-04C9-4380-A512-13F780A3D365}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0ED96FE2-D941-4370-8AEE-533CC6AF5E0A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0ED96FE2-D941-4370-8AEE-533CC6AF5E0A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0ED96FE2-D941-4370-8AEE-533CC6AF5E0A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0ED96FE2-D941-4370-8AEE-533CC6AF5E0A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
