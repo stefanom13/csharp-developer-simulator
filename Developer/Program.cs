@@ -15,6 +15,10 @@
 //5.1 risolta == true --> dobbiamo scrivere il file in modo che la lista sia aggiornata senza il task corrente.
 
 //6. ripeto dl punto ?? 
+using System;
+using Libreria;
+using System.IO;
+using System.Threading;
 
 
 StreamReader clientActivity = File.OpenText("C:\\Users\\Utente\\source\\repos\\csharp-developer-simulator\\developer_activity.txt");

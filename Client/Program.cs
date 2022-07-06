@@ -6,8 +6,6 @@
 
 //quindi il cliente deve ricominciare possibilmente senza riassegnare task già assegnati allo sviluppatore ( che controlli ?? )
 
-
-
 //sviluppi
 
 
@@ -24,13 +22,96 @@
 //5. si ricomincia da punto 2 fino alla fine del file client_activity.txt
 
 
-StreamReader clientActivity = File.OpenText("C:\\Users\\Utente\\source\\repos\\csharp-developer-simulator\\client_activity.txt");
+using System;
+using Libreria;
+using System.IO;
+using System.Threading;
 
+//reader
+StreamReader clientActivity = File.OpenText("C:\\Users\\Utente\\source\\repos\\csharp-developer-simulator\\client_activity.txt");
+List<string> liste = new List<string>();
 while (!clientActivity.EndOfStream)
 {
-    StreamWriter developerActivity = File.CreateText("C:\\Users\\Utente\\source\\repos\\csharp-developer-simulator\\developer_activity.txt");
+    string attività = clientActivity.ReadLine();
+    string lista = attività;
+    liste.Add(lista);
+}
+clientActivity.Close();
 
-    string activity = clientActivity.ReadLine();
-    developerActivity.WriteLine(activity);
+
+//writer
+try
+{
+    string path = "C:\\Users\\Utente\\source\\repos\\csharp-developer-simulator\\developer_activity.txt";
+
+    if (File.Exists(path))
+    {
+        
+        foreach (string lista in liste)
+            
+        {
+            StreamWriter file = new StreamWriter(path);
+            file.WriteLine(lista);
+            Console.WriteLine(lista);
+            Thread.Sleep(800);
+            file.Close();
+            //StreamWriter attivitaDev = File.AppendText(path);
+            //attivitaDev.Close();
+
+        }
+        
+    }
+}
+catch (Exception e)
+{
+Console.WriteLine(e.Message);
 
 }
+
+//foreach (string list in lists)
+//{
+//    if (lists.Contains(list))
+//    {
+//        Console.WriteLine("ok", list);
+//    }
+//    else
+//    {
+//        Console.WriteLine("dev", list);
+//        StreamWriter attivitaDev = File.AppendText(path);
+//       attivitaDev.WriteLine(list);
+//        attivitaDev.Close();
+//    }
+//
+//    Thread.Sleep(1000);
+//}
+
+
+
+
+
+//******** metodo per scrivere su un foglio
+//try
+//{
+//string pathd = "miopath\\miofileditesto.txt";
+//if (!File.Exists(pathd))
+//{
+// Creo un file
+/// StreamWriter file = File.CreateText(pathd);
+//scivo le mie linee di testo
+//file.WriteLine("Hello");
+//file.WriteLine("And");
+//file.WriteLine("Welcome");
+//file.Close();
+//}
+//}
+//catch (Exception e)
+//{
+
+// Console.WriteLine(e.Message);
+
+//}
+//********
+
+
+
+
